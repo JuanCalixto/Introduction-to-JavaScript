@@ -35,7 +35,15 @@ Do the following:
    HINT: no function required
 */
 
+let a = 2;
 
+let b = 5;
+
+if (a >= 1) {
+ a = b;
+}
+
+console.log(a);
 
 
 
