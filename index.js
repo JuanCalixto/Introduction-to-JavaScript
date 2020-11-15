@@ -244,7 +244,7 @@ Using the feet function below do the following:
 function feet(cm){
     return cm * 0.0328084
   }
- 
+
 console.log(feet(2));
 
 
@@ -258,9 +258,15 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(countDown) {
+  for (let i = countDown; i > 0; i--) {
+    let nextNum = i - 1;
+    console.log(
+      `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${nextNum} bottles of soda on the wall`
+    );
   }
+}
+console.log(annoyingSong(10));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
