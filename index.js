@@ -176,9 +176,43 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(user, computer){
-    /*add your code here*/
+function rockPaperScissors(userSelection) {
+  let computerSelection = Math.floor(Math.random() * 3);
+  let userChoice;
+  let computerChoice;
+
+  if (computerSelection === 0) {
+    computerChoice = 'rock';
+  } else if (computerSelection === 1) {
+    computerChoice = 'paper';
+  } else if (computerSelection === 2) {
+    computerChoice = 'scissors';
+  }
+
+  if (userSelection === 'rock') {
+    userChoice = 0;
+  } else if (userSelection === 'paper') {
+    userChoice = 1;
+  } else if (userSelection === 'scissors') {
+    userChoice = 2;
+  } else {
+    return 'You must select rock, paper or scissors';
+  }
+
+  if (userChoice === computerSelection) {
+    return `It's a tie! You Both Played ${computerChoice}.`;
+  } else if (userChoice === 0 && computerSelection === 2) {
+    return `You Win! The Computer played ${computerChoice}.`;
+  } else if (userChoice === 1 && computerSelection === 0) {
+    return `You Win! The Computer played ${computerChoice}.`;
+  } else if (userChoice === 2 && computerSelection === 1) {
+    return `You Win! The Computer played ${computerChoice}.`;
+  } else {
+    return `You Lose! The Computer played ${computerChoice}.`;
+  }
 }
+
+console.log(rockPaperScissors('scissors'));
   
   
 
