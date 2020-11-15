@@ -75,11 +75,14 @@ Do the following:
 
 function multiply(a, b){
     return a * b;
-  };
+  }
 
 console.log(multiply(2, 2));
 
+// Arrow Function
+const multiplyTwoNumbers = (a, b) => a * b;
 
+console.log(multiplyTwoNumbers(2, 2));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -93,7 +96,7 @@ Do the following:
 
 function dogYears(humanAge){
     return humanAge * 7;
-};
+}
 
 console.log(dogYears(10));
 
@@ -126,10 +129,32 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function dogFeeder(age, weight) {
+  //Adult dogs
+  if (age >= 1) {
+    if (weight <= 5) {
+      return weight * 0.05;
+    } else if (weight >= 6 && weight <= 10) {
+      return weight * 0.04;
+    } else if (weight >= 11 && weight <= 15) {
+      return weight * 0.03;
+    } else {
+      return weight * 0.02;
+    }
   }
+  // Puppies
+  else {
+    if (age >= 0.16 && age <= 0.33) {
+      return weight * 0.1;
+    } else if (age > 0.33 && age <= 0.58) {
+      return weight * 0.05;
+    } else {
+      return weight * 0.04;
+    }
+  }
+}
 
+console.log(dogFeeder(1, 15));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
