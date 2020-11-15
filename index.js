@@ -129,7 +129,7 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function dogFeeder(age, weight) {
+function hungryDog(age, weight) {
   //Adult dogs
   if (age >= 1) {
     if (weight <= 5) {
@@ -154,7 +154,7 @@ function dogFeeder(age, weight) {
   }
 }
 
-console.log(dogFeeder(1, 15));
+console.log(hungryDog(1, 15));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -176,7 +176,7 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function rockPaperScissors(userSelection) {
+function game(userSelection) {
   let computerSelection = Math.floor(Math.random() * 3);
   let userChoice;
   let computerChoice;
@@ -212,7 +212,7 @@ function rockPaperScissors(userSelection) {
   }
 }
 
-console.log(rockPaperScissors('scissors'));
+console.log(game('scissors'));
   
   
 
