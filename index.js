@@ -302,10 +302,22 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(str) {
+  // defining vowels
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  // initialize count
+  let count = 0;
+// loop through string to test if each character is a vowel
+  for (let letter of str.toLowerCase()) {
+    if (vowels.includes(letter)) {
+        count++;
+    }
+}
+// return number of vowels
+return count;
 }
 
+console.log(vowelCounter('Juan'));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
